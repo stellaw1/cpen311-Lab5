@@ -274,16 +274,6 @@ logic lfsr_clk;
 logic [4:0]LFSR;
 logic [31:0] dds_increment;
 
-clock_divider lfsr_clk_div (
-	.in_clk(CLOCK_50),
-	.div_clk_count(50_000_000),
-	.out_clk(lfsr_clk)
-);
-
-lfsr lfsr_inst (
-	.clk(lfsr_clk),
-	.lfsr(LFSR)
-);
 
 /// NIOS II Qsys
 
@@ -344,6 +334,34 @@ DE1_SoC_QSYS U0(
 	
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_modulation;
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_signal;
+
+
+clock_divider lfsr_clk_div (
+	.in_clk(CLOCK_50),
+	.div_clk_count(50_000_000),
+	.out_clk(lfsr_clk)
+);
+
+lfsr lfsr_inst (
+	.clk(lfsr_clk),
+	.lfsr(LFSR)
+);
+
+logic [11:0] sin_out, cos_out, squ_out, saw_out;
+
+waveform_gen
+DDS
+(
+	.clk(CLOCK_50),
+	.reset(1),
+	.en(1),
+	.phase_inc(32'd258),
+
+	.sin_out(sin_out),
+	.cos_out(cos_out),
+	.squ_out(squ_out),
+	.saw_out(saw_out)
+);
 
 
 ////////////////////////////////////////////////////////////////////
