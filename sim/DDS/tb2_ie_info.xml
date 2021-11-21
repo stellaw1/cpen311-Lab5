@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<AddressBits>32</AddressBits>
+	<DateInvoked>2021/11/20 16:23:10</DateInvoked>
+	<ElapsedTime>5917</ElapsedTime>
+	<IsInternal>false</IsInternal>
+	<Name>quartus</Name>
+	<PeakMemoryUsed>0</PeakMemoryUsed>
+	<License>
+		<Edition>Web Edition</Edition>
+		<LicenseHostID/>
+	</License>
+	<SchemaVersion>schema_2009-05-26</SchemaVersion>
+	<ProjectRevision>
+		<ProjectName/>
+		<Revision/>
+	</ProjectRevision>
+	<ApplicationError>
+		<ErrorMessage>Current editor: WED, SFW, RPW</ErrorMessage>
+		<Line>0</Line>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	0x77ed7271: ntdll + 0x87271 (RtlGetNtGlobalFlags + 0xe1)
+	0x77e93c15: ntdll + 0x43c15 (RtlFreeHeap + 0x45)
+	0x6a893c1a: MSVCR90 + 0x63c1a (free + 0xcc)
+	0x026a1006: ccl_mem_native + 0x1006 (?mem_native_array_delete@@YIXPAX@Z + 0x6)
+	0x059b0f9c: db_vdb + 0x40f9c (?clear@VDB_LEVEL_COLLECTION@@QAIXXZ + 0x3c)
+	0x059b1468: db_vdb + 0x41468 (??1VDB_LEVEL_COLLECTION@@QAE@XZ + 0x28)
+	0x0088dee5: edt_wed + 0x8dee5 (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0xd905)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<QuartusInstallation>
+		<InstallationID>49410866935485.163255404815256</InstallationID>
+		<Version>
+			<Build>235</Build>
+			<BuildSite>SJ</BuildSite>
+			<BuildSuffix/>
+			<Edition>Web Edition</Edition>
+			<ServicePack>2</ServicePack>
+			<VersionNumber>9</VersionNumber>
+		</Version>
+	</QuartusInstallation>
+	<Compilation>
+		<CompileID>0</CompileID>
+		<DeviceFamily/>
+		<IncrementalCompilation/>
+		<SOPCBuilderProjectID/>
+		<TopLevelEntityName/>
+	</Compilation>
+	<QuartusUser>
+		<AlteraUserName/>
+		<FAEContactName/>
+		<UserID>49410866935485.163255452214008</UserID>
+		<UserName>stell</UserName>
+		<TalkbackStatus>
+			<DateSet/>
+			<TalkbackOn>true</TalkbackOn>
+		</TalkbackStatus>
+	</QuartusUser>
+	<Machine>
+		<CPUCountLogical>12</CPUCountLogical>
+		<CPUCountPhysical>1</CPUCountPhysical>
+		<CPUSpeed>3912</CPUSpeed>
+		<Hostname>DESKTOP-FJ16JMT</Hostname>
+		<OS>Windows Vista</OS>
+		<OSAddressBits>64</OSAddressBits>
+		<OSVersion>6.2</OSVersion>
+		<Platform>windows</Platform>
+		<ScreenResolution>unknown</ScreenResolution>
+		<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+		<TotalVirtualRAM>0</TotalVirtualRAM>
+		<NIC>
+			<Address>2cf05d2bf6bd</Address>
+		</NIC>
+		<NIC>
+			<Address>548d5acf4959</Address>
+		</NIC>
+		<NIC>
+			<Address>00155db15366</Address>
+		</NIC>
+		<NIC>
+			<Address>548d5acf4955</Address>
+		</NIC>
+		<NIC>
+			<Address>548d5acf4956</Address>
+		</NIC>
+		<NIC>
+			<Address>568d5acf4955</Address>
+		</NIC>
+	</Machine>
+</ProgramExecution>
+
