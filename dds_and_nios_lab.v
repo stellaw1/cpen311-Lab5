@@ -310,9 +310,6 @@ DE1_SoC_QSYS U0(
 	   .audio2fifo_0_wrclk_export                     (WRCLK),                     //              audio2fifo_0_wrclk.export
 	   .audio2fifo_0_wrreq_export                     (WRREQ),                   //              audio2fifo_0_wrreq.export
 		
-		.lfsr_clk_interrupt_gen_external_connection_export(lfsr_clk),
-		.lfsr_val_external_connection_export(LFSR),
-		.dds_increment_external_connection_export(dds_increment),
 		
 		//interfaces
 	   .signal_selector_export                        (signal_selector[7:0]),                        //                 signal_selector.export
@@ -356,7 +353,7 @@ lfsr lfsr_inst (
 logic [11:0] ASK_signal, BPSK_signal, FSK_signal;
 assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
 assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
-
+assign FSK_signal = 12'b0;
 
 // task 2
 logic [11:0] sin_out, cos_out, squ_out, saw_out;
@@ -402,20 +399,24 @@ choose_modulation_signal
 );
 
 
-Synchronizer
-wave_signal_sync
+Fast_to_slow_clock
+wave_signal_synchronizer
 (
-	.async_clk(unsynced_selected_signal),
-    .clk(sampler), 
-    .out_sync_clk(actual_selected_signal),
+	.data_in(unsynced_selected_signal), 
+	.clk_fast(CLOCK_50), 
+	.clk_slow(sampler), 
+	.reset(0), 
+	.data_out(actual_selected_signal)
 );
 
-Synchronizer
-modulated_signal_sync
+Fast_to_slow_clock
+modulated_signal_synchronizer
 (
-	.async_clk(unsynced_selected_modulation),
-    .clk(sampler), 
-    .out_sync_clk(actual_selected_modulation),
+	.data_in(unsynced_selected_modulation), 
+	.clk_fast(CLOCK_50), 
+	.clk_slow(sampler), 
+	.reset(0), 
+	.data_out(actual_selected_modulation)
 );
 
 
