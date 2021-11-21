@@ -310,6 +310,9 @@ DE1_SoC_QSYS U0(
 	   .audio2fifo_0_wrclk_export                     (WRCLK),                     //              audio2fifo_0_wrclk.export
 	   .audio2fifo_0_wrreq_export                     (WRREQ),                   //              audio2fifo_0_wrreq.export
 		
+		.lfsr_clk_interrupt_gen_external_connection_export(lfsr_clk),
+		.lfsr_val_external_connection_export(LFSR),
+		.dds_increment_external_connection_export(dds_increment),
 		
 		//interfaces
 	   .signal_selector_export                        (signal_selector[7:0]),                        //                 signal_selector.export
@@ -350,7 +353,7 @@ lfsr lfsr_inst (
 
 
 // task 3
-logic [11:0] ASK_signal, BPSK_signal;
+logic [11:0] ASK_signal, BPSK_signal, FSK_signal;
 assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
 assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
 
