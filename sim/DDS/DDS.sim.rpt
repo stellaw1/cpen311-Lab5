@@ -1,5 +1,5 @@
 Simulator report for DDS
-Sat Nov 20 16:52:13 2021
+Sat Nov 20 17:14:02 2021
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -49,7 +49,7 @@ applicable agreement for further details.
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 304 nodes    ;
 ; Simulation Coverage         ;      71.38 % ;
-; Total Number of Transitions ; 3438367      ;
+; Total Number of Transitions ; 3405155      ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
@@ -113,8 +113,8 @@ Please use Quartus II to view the memory report data.
 ; Total nodes checked                                 ; 304          ;
 ; Total output ports checked                          ; 304          ;
 ; Total output ports with complete 1/0-value coverage ; 217          ;
-; Total output ports with no 1/0-value coverage       ; 87           ;
-; Total output ports with no 1-value coverage         ; 87           ;
+; Total output ports with no 1/0-value coverage       ; 86           ;
+; Total output ports with no 1-value coverage         ; 86           ;
 ; Total output ports with no 0-value coverage         ; 87           ;
 +-----------------------------------------------------+--------------+
 
@@ -355,7 +355,6 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |waveform_gen|phase_acc[2]  ; |waveform_gen|phase_acc[2]  ; regout           ;
 ; |waveform_gen|phase_acc[1]  ; |waveform_gen|phase_acc[1]  ; regout           ;
 ; |waveform_gen|phase_acc[0]  ; |waveform_gen|phase_acc[0]  ; regout           ;
-; |waveform_gen|reset         ; |waveform_gen|reset         ; out              ;
 ; |waveform_gen|en            ; |waveform_gen|en            ; out              ;
 ; |waveform_gen|phase_inc[0]  ; |waveform_gen|phase_inc[0]  ; out              ;
 ; |waveform_gen|phase_inc[1]  ; |waveform_gen|phase_inc[1]  ; out              ;
@@ -550,7 +549,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Nov 20 16:52:07 2021
+    Info: Processing started: Sat Nov 20 17:13:56 2021
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off DDS -c DDS
 Info: Using vector source file "C:/Documents/School/cpen311-Lab5/sim/DDS/DDS.vwf"
 Info: Overwriting simulation input file with simulation results
@@ -559,12 +558,12 @@ Info: Option to preserve fewer signal transitions to reduce memory requirements 
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is      71.38 %
-Info: Number of transitions in simulation is 3438367
+Info: Number of transitions in simulation is 3405155
 Info: Vector file DDS.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 161 megabytes
-    Info: Processing ended: Sat Nov 20 16:52:13 2021
+    Info: Processing ended: Sat Nov 20 17:14:02 2021
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 

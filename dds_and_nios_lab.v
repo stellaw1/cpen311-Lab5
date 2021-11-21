@@ -336,9 +336,10 @@ DE1_SoC_QSYS U0(
 (* keep = 1, preserve = 1 *) logic [11:0] actual_selected_signal;
 
 
+// task 1
 clock_divider lfsr_clk_div (
 	.in_clk(CLOCK_50),
-	.div_clk_count(50_000_000),
+	.div_clk_count(32'd50_000_000),
 	.out_clk(lfsr_clk)
 );
 
@@ -347,10 +348,14 @@ lfsr lfsr_inst (
 	.lfsr(LFSR)
 );
 
+
+// task 3
 logic [11:0] ASK_signal, BPSK_signal;
 assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
 assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
 
+
+// task 2
 logic [11:0] sin_out, cos_out, squ_out, saw_out;
 
 waveform_gen
@@ -365,6 +370,49 @@ DDS
 	.cos_out(cos_out),
 	.squ_out(squ_out),
 	.saw_out(saw_out)
+);
+
+// task 4
+logic [11:0] unsynced_selected_signal, unsynced_selected_modulation;
+
+mux4to1
+choose_wave_signal
+(
+	
+	.a(sin_out),
+	.b(cos_out),
+	.c(saw_out),
+	.d(squ_out),
+	.sel(signal_selector[1:0]),
+	.out(unsynced_selected_signal),
+);
+
+mux4to1
+choose_modulation_signal
+(
+	.a(ASK_signal),
+	.b(FSK_signal),
+	.c(BPSK_signal),
+	.d(LFSR),
+	.sel(modulation_selector[1:0]),
+	.out(unsynced_selected_modulation),
+);
+
+
+Synchronizer
+wave_signal_sync
+(
+	.async_clk(unsynced_selected_signal),
+    .clk(sampler), 
+    .out_sync_clk(actual_selected_signal),
+);
+
+Synchronizer
+modulated_signal_sync
+(
+	.async_clk(unsynced_selected_modulation),
+    .clk(sampler), 
+    .out_sync_clk(actual_selected_modulation),
 );
 
 
