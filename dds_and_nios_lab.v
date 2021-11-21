@@ -274,6 +274,17 @@ logic lfsr_clk;
 logic [4:0]LFSR;
 logic [31:0] dds_increment;
 
+clock_divider lfsr_clk_div (
+	.in_clk(CLOCK_50),
+	.div_clk_count(50_000_000),
+	.out_clk(lfsr_clk)
+);
+
+lfsr lfsr_inst (
+	.clk(lfsr_clk),
+	.lfsr(LFSR)
+);
+
 /// NIOS II Qsys
 
 DE1_SoC_QSYS U0( 

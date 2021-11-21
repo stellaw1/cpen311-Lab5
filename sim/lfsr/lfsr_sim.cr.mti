@@ -1,0 +1,8 @@
+C:/Users/amirb/School/2021-2022/CPEN311/cpen311-Lab5/sim/lfsr/lfsr_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/amirb/School/2021-2022/CPEN311/cpen311-Lab5/sim/lfsr/lfsr_tb.sv
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module lfsr_tb
+
+Top level modules:
+	lfsr_tb
+
+} {} {}}
