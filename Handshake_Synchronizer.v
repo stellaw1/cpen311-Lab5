@@ -34,13 +34,13 @@ module Handshake_Synchronizer(clk_in, clk_out, reset, data_in, data_out);
             ack_sync <= ack_out;
     end
 
-    DFF_Enable #(12) data_reg(
-        .D(data_in),
-        .clk(clk_out),
-        .reset(reset),
-        .enable(ack_out),
-        .Q(data_out)
-    );
+    //clock output
+    always @(posedge ack_out, negedge ack_out) begin
+        if (reset)
+            data_out <= 0;
+        else
+            data_out <= data_in;
+    end
 
 endmodule
 
