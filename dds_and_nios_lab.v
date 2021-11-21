@@ -347,6 +347,10 @@ lfsr lfsr_inst (
 	.lfsr(LFSR)
 );
 
+logic [11:0] ASK_signal, BPSK_signal;
+assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
+assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
+
 logic [11:0] sin_out, cos_out, squ_out, saw_out;
 
 waveform_gen
