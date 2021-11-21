@@ -350,7 +350,7 @@ lfsr lfsr_inst (
 
 
 // task 3
-logic [11:0] ASK_signal, BPSK_signal;
+logic [11:0] ASK_signal, BPSK_signal, FSK_signal;
 assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
 assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
 
