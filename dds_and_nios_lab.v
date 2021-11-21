@@ -353,7 +353,7 @@ lfsr lfsr_inst (
 logic [11:0] ASK_signal, BPSK_signal, FSK_signal;
 assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
 assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
-
+assign FSK_signal = 12'b0;
 
 // task 2
 logic [11:0] sin_out, cos_out, squ_out, saw_out;
@@ -398,21 +398,24 @@ choose_modulation_signal
 	.out(unsynced_selected_modulation),
 );
 
-
-Synchronizer
-wave_signal_sync
+Handshake_Synchronizer 
+wave_signal_clock_domain_crossing
 (
-	.async_clk(unsynced_selected_signal),
-    .clk(sampler), 
-    .out_sync_clk(actual_selected_signal),
+	.clk_in(CLOCK_50), 
+	.clk_out(sampler), 
+	.reset(0), 
+	.data_in(unsynced_selected_signal), 
+	.data_out(actual_selected_signal)
 );
 
-Synchronizer
-modulated_signal_sync
+Handshake_Synchronizer 
+modulation_signal_clock_domain_crossing
 (
-	.async_clk(unsynced_selected_modulation),
-    .clk(sampler), 
-    .out_sync_clk(actual_selected_modulation),
+	.clk_in(CLOCK_50), 
+	.clk_out(sampler), 
+	.reset(0), 
+	.data_in(unsynced_selected_modulation), 
+	.data_out(actual_selected_modulation)
 );
 
 
