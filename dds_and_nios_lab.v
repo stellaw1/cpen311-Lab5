@@ -398,23 +398,24 @@ choose_modulation_signal
 	.out(unsynced_selected_modulation),
 );
 
-Handshake_Synchronizer 
-wave_signal_clock_domain_crossing
+
+Fast_to_slow_clock
+wave_signal_synchronizer
 (
-	.clk_in(CLOCK_50), 
-	.clk_out(sampler), 
-	.reset(0), 
 	.data_in(unsynced_selected_signal), 
+	.clk_fast(CLOCK_50), 
+	.clk_slow(sampler), 
+	.reset(0), 
 	.data_out(actual_selected_signal)
 );
 
-Handshake_Synchronizer 
-modulation_signal_clock_domain_crossing
+Fast_to_slow_clock
+modulated_signal_synchronizer
 (
-	.clk_in(CLOCK_50), 
-	.clk_out(sampler), 
-	.reset(0), 
 	.data_in(unsynced_selected_modulation), 
+	.clk_fast(CLOCK_50), 
+	.clk_slow(sampler), 
+	.reset(0), 
 	.data_out(actual_selected_modulation)
 );
 
