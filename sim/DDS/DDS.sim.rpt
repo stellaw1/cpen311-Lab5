@@ -1,0 +1,570 @@
+Simulator report for DDS
+Sat Nov 20 16:52:13 2021
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ALTSYNCRAM
+  6. |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ALTSYNCRAM
+  7. Coverage Summary
+  8. Complete 1/0-Value Coverage
+  9. Missing 1-Value Coverage
+ 10. Missing 0-Value Coverage
+ 11. Simulator INI Usage
+ 12. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 304 nodes    ;
+; Simulation Coverage         ;      71.38 % ;
+; Total Number of Transitions ; 3438367      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------------------------------------+
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++-------------------------------------------------------------------------------------------------+
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      71.38 % ;
+; Total nodes checked                                 ; 304          ;
+; Total output ports checked                          ; 304          ;
+; Total output ports with complete 1/0-value coverage ; 217          ;
+; Total output ports with no 1/0-value coverage       ; 87           ;
+; Total output ports with no 1-value coverage         ; 87           ;
+; Total output ports with no 0-value coverage         ; 87           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                ;
++----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                          ; Output Port Name                                                                                   ; Output Port Type ;
++----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; |waveform_gen|phase_acc[31]                                                                        ; |waveform_gen|phase_acc[31]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[30]                                                                        ; |waveform_gen|phase_acc[30]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[29]                                                                        ; |waveform_gen|phase_acc[29]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[28]                                                                        ; |waveform_gen|phase_acc[28]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[27]                                                                        ; |waveform_gen|phase_acc[27]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[26]                                                                        ; |waveform_gen|phase_acc[26]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[25]                                                                        ; |waveform_gen|phase_acc[25]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[24]                                                                        ; |waveform_gen|phase_acc[24]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[23]                                                                        ; |waveform_gen|phase_acc[23]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[22]                                                                        ; |waveform_gen|phase_acc[22]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[21]                                                                        ; |waveform_gen|phase_acc[21]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[20]                                                                        ; |waveform_gen|phase_acc[20]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[19]                                                                        ; |waveform_gen|phase_acc[19]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[18]                                                                        ; |waveform_gen|phase_acc[18]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[17]                                                                        ; |waveform_gen|phase_acc[17]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[16]                                                                        ; |waveform_gen|phase_acc[16]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[15]                                                                        ; |waveform_gen|phase_acc[15]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[14]                                                                        ; |waveform_gen|phase_acc[14]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[13]                                                                        ; |waveform_gen|phase_acc[13]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[12]                                                                        ; |waveform_gen|phase_acc[12]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[11]                                                                        ; |waveform_gen|phase_acc[11]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[10]                                                                        ; |waveform_gen|phase_acc[10]                                                                        ; regout           ;
+; |waveform_gen|phase_acc[9]                                                                         ; |waveform_gen|phase_acc[9]                                                                         ; regout           ;
+; |waveform_gen|phase_acc[8]                                                                         ; |waveform_gen|phase_acc[8]                                                                         ; regout           ;
+; |waveform_gen|phase_acc[7]                                                                         ; |waveform_gen|phase_acc[7]                                                                         ; regout           ;
+; |waveform_gen|phase_acc[6]                                                                         ; |waveform_gen|phase_acc[6]                                                                         ; regout           ;
+; |waveform_gen|phase_acc[5]                                                                         ; |waveform_gen|phase_acc[5]                                                                         ; regout           ;
+; |waveform_gen|phase_acc[4]                                                                         ; |waveform_gen|phase_acc[4]                                                                         ; regout           ;
+; |waveform_gen|lut_addr_reg[0]                                                                      ; |waveform_gen|lut_addr_reg[0]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[1]                                                                      ; |waveform_gen|lut_addr_reg[1]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[2]                                                                      ; |waveform_gen|lut_addr_reg[2]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[3]                                                                      ; |waveform_gen|lut_addr_reg[3]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[4]                                                                      ; |waveform_gen|lut_addr_reg[4]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[5]                                                                      ; |waveform_gen|lut_addr_reg[5]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[6]                                                                      ; |waveform_gen|lut_addr_reg[6]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[7]                                                                      ; |waveform_gen|lut_addr_reg[7]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[8]                                                                      ; |waveform_gen|lut_addr_reg[8]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[9]                                                                      ; |waveform_gen|lut_addr_reg[9]                                                                      ; regout           ;
+; |waveform_gen|lut_addr_reg[10]                                                                     ; |waveform_gen|lut_addr_reg[10]                                                                     ; regout           ;
+; |waveform_gen|lut_addr_reg[11]                                                                     ; |waveform_gen|lut_addr_reg[11]                                                                     ; regout           ;
+; |waveform_gen|clk                                                                                  ; |waveform_gen|clk                                                                                  ; out              ;
+; |waveform_gen|sin_out[0]                                                                           ; |waveform_gen|sin_out[0]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[1]                                                                           ; |waveform_gen|sin_out[1]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[2]                                                                           ; |waveform_gen|sin_out[2]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[3]                                                                           ; |waveform_gen|sin_out[3]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[4]                                                                           ; |waveform_gen|sin_out[4]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[5]                                                                           ; |waveform_gen|sin_out[5]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[6]                                                                           ; |waveform_gen|sin_out[6]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[7]                                                                           ; |waveform_gen|sin_out[7]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[8]                                                                           ; |waveform_gen|sin_out[8]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[9]                                                                           ; |waveform_gen|sin_out[9]                                                                           ; pin_out          ;
+; |waveform_gen|sin_out[10]                                                                          ; |waveform_gen|sin_out[10]                                                                          ; pin_out          ;
+; |waveform_gen|sin_out[11]                                                                          ; |waveform_gen|sin_out[11]                                                                          ; pin_out          ;
+; |waveform_gen|cos_out[0]                                                                           ; |waveform_gen|cos_out[0]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[1]                                                                           ; |waveform_gen|cos_out[1]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[2]                                                                           ; |waveform_gen|cos_out[2]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[3]                                                                           ; |waveform_gen|cos_out[3]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[4]                                                                           ; |waveform_gen|cos_out[4]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[5]                                                                           ; |waveform_gen|cos_out[5]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[6]                                                                           ; |waveform_gen|cos_out[6]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[7]                                                                           ; |waveform_gen|cos_out[7]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[8]                                                                           ; |waveform_gen|cos_out[8]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[9]                                                                           ; |waveform_gen|cos_out[9]                                                                           ; pin_out          ;
+; |waveform_gen|cos_out[10]                                                                          ; |waveform_gen|cos_out[10]                                                                          ; pin_out          ;
+; |waveform_gen|cos_out[11]                                                                          ; |waveform_gen|cos_out[11]                                                                          ; pin_out          ;
+; |waveform_gen|squ_out[0]                                                                           ; |waveform_gen|squ_out[0]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[1]                                                                           ; |waveform_gen|squ_out[1]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[2]                                                                           ; |waveform_gen|squ_out[2]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[3]                                                                           ; |waveform_gen|squ_out[3]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[4]                                                                           ; |waveform_gen|squ_out[4]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[5]                                                                           ; |waveform_gen|squ_out[5]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[6]                                                                           ; |waveform_gen|squ_out[6]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[7]                                                                           ; |waveform_gen|squ_out[7]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[8]                                                                           ; |waveform_gen|squ_out[8]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[9]                                                                           ; |waveform_gen|squ_out[9]                                                                           ; pin_out          ;
+; |waveform_gen|squ_out[10]                                                                          ; |waveform_gen|squ_out[10]                                                                          ; pin_out          ;
+; |waveform_gen|squ_out[11]                                                                          ; |waveform_gen|squ_out[11]                                                                          ; pin_out          ;
+; |waveform_gen|saw_out[0]                                                                           ; |waveform_gen|saw_out[0]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[1]                                                                           ; |waveform_gen|saw_out[1]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[2]                                                                           ; |waveform_gen|saw_out[2]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[3]                                                                           ; |waveform_gen|saw_out[3]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[4]                                                                           ; |waveform_gen|saw_out[4]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[5]                                                                           ; |waveform_gen|saw_out[5]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[6]                                                                           ; |waveform_gen|saw_out[6]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[7]                                                                           ; |waveform_gen|saw_out[7]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[8]                                                                           ; |waveform_gen|saw_out[8]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[9]                                                                           ; |waveform_gen|saw_out[9]                                                                           ; pin_out          ;
+; |waveform_gen|saw_out[10]                                                                          ; |waveform_gen|saw_out[10]                                                                          ; pin_out          ;
+; |waveform_gen|saw_out[11]                                                                          ; |waveform_gen|saw_out[11]                                                                          ; pin_out          ;
+; |waveform_gen|Add0~17                                                                              ; |waveform_gen|Add0~17                                                                              ; out0             ;
+; |waveform_gen|Add0~18                                                                              ; |waveform_gen|Add0~18                                                                              ; out0             ;
+; |waveform_gen|Add0~20                                                                              ; |waveform_gen|Add0~20                                                                              ; out0             ;
+; |waveform_gen|Add0~22                                                                              ; |waveform_gen|Add0~22                                                                              ; out0             ;
+; |waveform_gen|Add0~23                                                                              ; |waveform_gen|Add0~23                                                                              ; out0             ;
+; |waveform_gen|Add0~24                                                                              ; |waveform_gen|Add0~24                                                                              ; out0             ;
+; |waveform_gen|Add0~27                                                                              ; |waveform_gen|Add0~27                                                                              ; out0             ;
+; |waveform_gen|Add0~28                                                                              ; |waveform_gen|Add0~28                                                                              ; out0             ;
+; |waveform_gen|Add0~29                                                                              ; |waveform_gen|Add0~29                                                                              ; out0             ;
+; |waveform_gen|Add0~30                                                                              ; |waveform_gen|Add0~30                                                                              ; out0             ;
+; |waveform_gen|Add0~31                                                                              ; |waveform_gen|Add0~31                                                                              ; out0             ;
+; |waveform_gen|Add0~32                                                                              ; |waveform_gen|Add0~32                                                                              ; out0             ;
+; |waveform_gen|Add0~33                                                                              ; |waveform_gen|Add0~33                                                                              ; out0             ;
+; |waveform_gen|Add0~34                                                                              ; |waveform_gen|Add0~34                                                                              ; out0             ;
+; |waveform_gen|Add0~35                                                                              ; |waveform_gen|Add0~35                                                                              ; out0             ;
+; |waveform_gen|Add0~36                                                                              ; |waveform_gen|Add0~36                                                                              ; out0             ;
+; |waveform_gen|Add0~37                                                                              ; |waveform_gen|Add0~37                                                                              ; out0             ;
+; |waveform_gen|Add0~38                                                                              ; |waveform_gen|Add0~38                                                                              ; out0             ;
+; |waveform_gen|Add0~39                                                                              ; |waveform_gen|Add0~39                                                                              ; out0             ;
+; |waveform_gen|Add0~40                                                                              ; |waveform_gen|Add0~40                                                                              ; out0             ;
+; |waveform_gen|Add0~41                                                                              ; |waveform_gen|Add0~41                                                                              ; out0             ;
+; |waveform_gen|Add0~42                                                                              ; |waveform_gen|Add0~42                                                                              ; out0             ;
+; |waveform_gen|Add0~43                                                                              ; |waveform_gen|Add0~43                                                                              ; out0             ;
+; |waveform_gen|Add0~44                                                                              ; |waveform_gen|Add0~44                                                                              ; out0             ;
+; |waveform_gen|Add0~45                                                                              ; |waveform_gen|Add0~45                                                                              ; out0             ;
+; |waveform_gen|Add0~46                                                                              ; |waveform_gen|Add0~46                                                                              ; out0             ;
+; |waveform_gen|Add0~47                                                                              ; |waveform_gen|Add0~47                                                                              ; out0             ;
+; |waveform_gen|Add0~48                                                                              ; |waveform_gen|Add0~48                                                                              ; out0             ;
+; |waveform_gen|Add0~49                                                                              ; |waveform_gen|Add0~49                                                                              ; out0             ;
+; |waveform_gen|Add0~50                                                                              ; |waveform_gen|Add0~50                                                                              ; out0             ;
+; |waveform_gen|Add0~51                                                                              ; |waveform_gen|Add0~51                                                                              ; out0             ;
+; |waveform_gen|Add0~52                                                                              ; |waveform_gen|Add0~52                                                                              ; out0             ;
+; |waveform_gen|Add0~53                                                                              ; |waveform_gen|Add0~53                                                                              ; out0             ;
+; |waveform_gen|Add0~54                                                                              ; |waveform_gen|Add0~54                                                                              ; out0             ;
+; |waveform_gen|Add0~55                                                                              ; |waveform_gen|Add0~55                                                                              ; out0             ;
+; |waveform_gen|Add0~56                                                                              ; |waveform_gen|Add0~56                                                                              ; out0             ;
+; |waveform_gen|Add0~57                                                                              ; |waveform_gen|Add0~57                                                                              ; out0             ;
+; |waveform_gen|Add0~58                                                                              ; |waveform_gen|Add0~58                                                                              ; out0             ;
+; |waveform_gen|Add0~59                                                                              ; |waveform_gen|Add0~59                                                                              ; out0             ;
+; |waveform_gen|Add0~62                                                                              ; |waveform_gen|Add0~62                                                                              ; out0             ;
+; |waveform_gen|Add0~63                                                                              ; |waveform_gen|Add0~63                                                                              ; out0             ;
+; |waveform_gen|Add0~64                                                                              ; |waveform_gen|Add0~64                                                                              ; out0             ;
+; |waveform_gen|Add0~65                                                                              ; |waveform_gen|Add0~65                                                                              ; out0             ;
+; |waveform_gen|Add0~66                                                                              ; |waveform_gen|Add0~66                                                                              ; out0             ;
+; |waveform_gen|Add0~67                                                                              ; |waveform_gen|Add0~67                                                                              ; out0             ;
+; |waveform_gen|Add0~68                                                                              ; |waveform_gen|Add0~68                                                                              ; out0             ;
+; |waveform_gen|Add0~69                                                                              ; |waveform_gen|Add0~69                                                                              ; out0             ;
+; |waveform_gen|Add0~70                                                                              ; |waveform_gen|Add0~70                                                                              ; out0             ;
+; |waveform_gen|Add0~71                                                                              ; |waveform_gen|Add0~71                                                                              ; out0             ;
+; |waveform_gen|Add0~72                                                                              ; |waveform_gen|Add0~72                                                                              ; out0             ;
+; |waveform_gen|Add0~73                                                                              ; |waveform_gen|Add0~73                                                                              ; out0             ;
+; |waveform_gen|Add0~74                                                                              ; |waveform_gen|Add0~74                                                                              ; out0             ;
+; |waveform_gen|Add0~75                                                                              ; |waveform_gen|Add0~75                                                                              ; out0             ;
+; |waveform_gen|Add0~76                                                                              ; |waveform_gen|Add0~76                                                                              ; out0             ;
+; |waveform_gen|Add0~77                                                                              ; |waveform_gen|Add0~77                                                                              ; out0             ;
+; |waveform_gen|Add0~78                                                                              ; |waveform_gen|Add0~78                                                                              ; out0             ;
+; |waveform_gen|Add0~79                                                                              ; |waveform_gen|Add0~79                                                                              ; out0             ;
+; |waveform_gen|Add0~80                                                                              ; |waveform_gen|Add0~80                                                                              ; out0             ;
+; |waveform_gen|Add0~81                                                                              ; |waveform_gen|Add0~81                                                                              ; out0             ;
+; |waveform_gen|Add0~82                                                                              ; |waveform_gen|Add0~82                                                                              ; out0             ;
+; |waveform_gen|Add0~83                                                                              ; |waveform_gen|Add0~83                                                                              ; out0             ;
+; |waveform_gen|Add0~84                                                                              ; |waveform_gen|Add0~84                                                                              ; out0             ;
+; |waveform_gen|Add0~85                                                                              ; |waveform_gen|Add0~85                                                                              ; out0             ;
+; |waveform_gen|Add0~86                                                                              ; |waveform_gen|Add0~86                                                                              ; out0             ;
+; |waveform_gen|Add0~87                                                                              ; |waveform_gen|Add0~87                                                                              ; out0             ;
+; |waveform_gen|Add0~88                                                                              ; |waveform_gen|Add0~88                                                                              ; out0             ;
+; |waveform_gen|Add0~89                                                                              ; |waveform_gen|Add0~89                                                                              ; out0             ;
+; |waveform_gen|Add0~92                                                                              ; |waveform_gen|Add0~92                                                                              ; out0             ;
+; |waveform_gen|Add0~93                                                                              ; |waveform_gen|Add0~93                                                                              ; out0             ;
+; |waveform_gen|Add0~94                                                                              ; |waveform_gen|Add0~94                                                                              ; out0             ;
+; |waveform_gen|Add0~97                                                                              ; |waveform_gen|Add0~97                                                                              ; out0             ;
+; |waveform_gen|Add0~98                                                                              ; |waveform_gen|Add0~98                                                                              ; out0             ;
+; |waveform_gen|Add0~99                                                                              ; |waveform_gen|Add0~99                                                                              ; out0             ;
+; |waveform_gen|Add0~102                                                                             ; |waveform_gen|Add0~102                                                                             ; out0             ;
+; |waveform_gen|Add0~103                                                                             ; |waveform_gen|Add0~103                                                                             ; out0             ;
+; |waveform_gen|Add0~104                                                                             ; |waveform_gen|Add0~104                                                                             ; out0             ;
+; |waveform_gen|Add0~107                                                                             ; |waveform_gen|Add0~107                                                                             ; out0             ;
+; |waveform_gen|Add0~108                                                                             ; |waveform_gen|Add0~108                                                                             ; out0             ;
+; |waveform_gen|Add0~109                                                                             ; |waveform_gen|Add0~109                                                                             ; out0             ;
+; |waveform_gen|Add0~112                                                                             ; |waveform_gen|Add0~112                                                                             ; out0             ;
+; |waveform_gen|Add0~113                                                                             ; |waveform_gen|Add0~113                                                                             ; out0             ;
+; |waveform_gen|Add0~114                                                                             ; |waveform_gen|Add0~114                                                                             ; out0             ;
+; |waveform_gen|Add0~117                                                                             ; |waveform_gen|Add0~117                                                                             ; out0             ;
+; |waveform_gen|Add0~118                                                                             ; |waveform_gen|Add0~118                                                                             ; out0             ;
+; |waveform_gen|Add0~119                                                                             ; |waveform_gen|Add0~119                                                                             ; out0             ;
+; |waveform_gen|Add0~122                                                                             ; |waveform_gen|Add0~122                                                                             ; out0             ;
+; |waveform_gen|Add0~123                                                                             ; |waveform_gen|Add0~123                                                                             ; out0             ;
+; |waveform_gen|Add0~124                                                                             ; |waveform_gen|Add0~124                                                                             ; out0             ;
+; |waveform_gen|Add0~127                                                                             ; |waveform_gen|Add0~127                                                                             ; out0             ;
+; |waveform_gen|Add0~128                                                                             ; |waveform_gen|Add0~128                                                                             ; out0             ;
+; |waveform_gen|Add0~129                                                                             ; |waveform_gen|Add0~129                                                                             ; out0             ;
+; |waveform_gen|Add0~132                                                                             ; |waveform_gen|Add0~132                                                                             ; out0             ;
+; |waveform_gen|Add0~133                                                                             ; |waveform_gen|Add0~133                                                                             ; out0             ;
+; |waveform_gen|Add0~134                                                                             ; |waveform_gen|Add0~134                                                                             ; out0             ;
+; |waveform_gen|Add0~137                                                                             ; |waveform_gen|Add0~137                                                                             ; out0             ;
+; |waveform_gen|Add0~138                                                                             ; |waveform_gen|Add0~138                                                                             ; out0             ;
+; |waveform_gen|Add0~139                                                                             ; |waveform_gen|Add0~139                                                                             ; out0             ;
+; |waveform_gen|Add0~142                                                                             ; |waveform_gen|Add0~142                                                                             ; out0             ;
+; |waveform_gen|Add0~143                                                                             ; |waveform_gen|Add0~143                                                                             ; out0             ;
+; |waveform_gen|Add0~144                                                                             ; |waveform_gen|Add0~144                                                                             ; out0             ;
+; |waveform_gen|Add0~147                                                                             ; |waveform_gen|Add0~147                                                                             ; out0             ;
+; |waveform_gen|Add0~148                                                                             ; |waveform_gen|Add0~148                                                                             ; out0             ;
+; |waveform_gen|Add0~149                                                                             ; |waveform_gen|Add0~149                                                                             ; out0             ;
+; |waveform_gen|Add0~152                                                                             ; |waveform_gen|Add0~152                                                                             ; out0             ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a0  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a0  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a1  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a1  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a2  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a2  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a3  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a3  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a4  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a4  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a5  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a5  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a6  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a6  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a7  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a7  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a8  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a8  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a9  ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a9  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a10 ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a10 ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a11 ; |waveform_gen|sincos_lut:lut|altsyncram:COS_ROM_rtl_1|altsyncram_7n91:auto_generated|ram_block1a11 ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a0  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a0  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a1  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a1  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a2  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a2  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a3  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a3  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a4  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a4  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a5  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a5  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a6  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a6  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a7  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a7  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a8  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a8  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a9  ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a9  ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a10 ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a10 ; portadataout0    ;
+; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a11 ; |waveform_gen|sincos_lut:lut|altsyncram:SIN_ROM_rtl_0|altsyncram_6n91:auto_generated|ram_block1a11 ; portadataout0    ;
++----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |waveform_gen|phase_acc[3]  ; |waveform_gen|phase_acc[3]  ; regout           ;
+; |waveform_gen|phase_acc[2]  ; |waveform_gen|phase_acc[2]  ; regout           ;
+; |waveform_gen|phase_acc[1]  ; |waveform_gen|phase_acc[1]  ; regout           ;
+; |waveform_gen|phase_acc[0]  ; |waveform_gen|phase_acc[0]  ; regout           ;
+; |waveform_gen|reset         ; |waveform_gen|reset         ; out              ;
+; |waveform_gen|en            ; |waveform_gen|en            ; out              ;
+; |waveform_gen|phase_inc[0]  ; |waveform_gen|phase_inc[0]  ; out              ;
+; |waveform_gen|phase_inc[1]  ; |waveform_gen|phase_inc[1]  ; out              ;
+; |waveform_gen|phase_inc[2]  ; |waveform_gen|phase_inc[2]  ; out              ;
+; |waveform_gen|phase_inc[3]  ; |waveform_gen|phase_inc[3]  ; out              ;
+; |waveform_gen|phase_inc[4]  ; |waveform_gen|phase_inc[4]  ; out              ;
+; |waveform_gen|phase_inc[5]  ; |waveform_gen|phase_inc[5]  ; out              ;
+; |waveform_gen|phase_inc[6]  ; |waveform_gen|phase_inc[6]  ; out              ;
+; |waveform_gen|phase_inc[7]  ; |waveform_gen|phase_inc[7]  ; out              ;
+; |waveform_gen|phase_inc[8]  ; |waveform_gen|phase_inc[8]  ; out              ;
+; |waveform_gen|phase_inc[9]  ; |waveform_gen|phase_inc[9]  ; out              ;
+; |waveform_gen|phase_inc[10] ; |waveform_gen|phase_inc[10] ; out              ;
+; |waveform_gen|phase_inc[11] ; |waveform_gen|phase_inc[11] ; out              ;
+; |waveform_gen|phase_inc[12] ; |waveform_gen|phase_inc[12] ; out              ;
+; |waveform_gen|phase_inc[13] ; |waveform_gen|phase_inc[13] ; out              ;
+; |waveform_gen|phase_inc[14] ; |waveform_gen|phase_inc[14] ; out              ;
+; |waveform_gen|phase_inc[15] ; |waveform_gen|phase_inc[15] ; out              ;
+; |waveform_gen|phase_inc[16] ; |waveform_gen|phase_inc[16] ; out              ;
+; |waveform_gen|phase_inc[17] ; |waveform_gen|phase_inc[17] ; out              ;
+; |waveform_gen|phase_inc[18] ; |waveform_gen|phase_inc[18] ; out              ;
+; |waveform_gen|phase_inc[19] ; |waveform_gen|phase_inc[19] ; out              ;
+; |waveform_gen|phase_inc[20] ; |waveform_gen|phase_inc[20] ; out              ;
+; |waveform_gen|phase_inc[21] ; |waveform_gen|phase_inc[21] ; out              ;
+; |waveform_gen|phase_inc[22] ; |waveform_gen|phase_inc[22] ; out              ;
+; |waveform_gen|phase_inc[23] ; |waveform_gen|phase_inc[23] ; out              ;
+; |waveform_gen|phase_inc[24] ; |waveform_gen|phase_inc[24] ; out              ;
+; |waveform_gen|phase_inc[25] ; |waveform_gen|phase_inc[25] ; out              ;
+; |waveform_gen|phase_inc[26] ; |waveform_gen|phase_inc[26] ; out              ;
+; |waveform_gen|phase_inc[27] ; |waveform_gen|phase_inc[27] ; out              ;
+; |waveform_gen|phase_inc[28] ; |waveform_gen|phase_inc[28] ; out              ;
+; |waveform_gen|phase_inc[29] ; |waveform_gen|phase_inc[29] ; out              ;
+; |waveform_gen|phase_inc[30] ; |waveform_gen|phase_inc[30] ; out              ;
+; |waveform_gen|phase_inc[31] ; |waveform_gen|phase_inc[31] ; out              ;
+; |waveform_gen|Add0~0        ; |waveform_gen|Add0~0        ; out0             ;
+; |waveform_gen|Add0~1        ; |waveform_gen|Add0~1        ; out0             ;
+; |waveform_gen|Add0~2        ; |waveform_gen|Add0~2        ; out0             ;
+; |waveform_gen|Add0~3        ; |waveform_gen|Add0~3        ; out0             ;
+; |waveform_gen|Add0~4        ; |waveform_gen|Add0~4        ; out0             ;
+; |waveform_gen|Add0~5        ; |waveform_gen|Add0~5        ; out0             ;
+; |waveform_gen|Add0~6        ; |waveform_gen|Add0~6        ; out0             ;
+; |waveform_gen|Add0~7        ; |waveform_gen|Add0~7        ; out0             ;
+; |waveform_gen|Add0~8        ; |waveform_gen|Add0~8        ; out0             ;
+; |waveform_gen|Add0~9        ; |waveform_gen|Add0~9        ; out0             ;
+; |waveform_gen|Add0~10       ; |waveform_gen|Add0~10       ; out0             ;
+; |waveform_gen|Add0~11       ; |waveform_gen|Add0~11       ; out0             ;
+; |waveform_gen|Add0~12       ; |waveform_gen|Add0~12       ; out0             ;
+; |waveform_gen|Add0~13       ; |waveform_gen|Add0~13       ; out0             ;
+; |waveform_gen|Add0~14       ; |waveform_gen|Add0~14       ; out0             ;
+; |waveform_gen|Add0~15       ; |waveform_gen|Add0~15       ; out0             ;
+; |waveform_gen|Add0~16       ; |waveform_gen|Add0~16       ; out0             ;
+; |waveform_gen|Add0~19       ; |waveform_gen|Add0~19       ; out0             ;
+; |waveform_gen|Add0~21       ; |waveform_gen|Add0~21       ; out0             ;
+; |waveform_gen|Add0~25       ; |waveform_gen|Add0~25       ; out0             ;
+; |waveform_gen|Add0~26       ; |waveform_gen|Add0~26       ; out0             ;
+; |waveform_gen|Add0~60       ; |waveform_gen|Add0~60       ; out0             ;
+; |waveform_gen|Add0~61       ; |waveform_gen|Add0~61       ; out0             ;
+; |waveform_gen|Add0~90       ; |waveform_gen|Add0~90       ; out0             ;
+; |waveform_gen|Add0~91       ; |waveform_gen|Add0~91       ; out0             ;
+; |waveform_gen|Add0~95       ; |waveform_gen|Add0~95       ; out0             ;
+; |waveform_gen|Add0~96       ; |waveform_gen|Add0~96       ; out0             ;
+; |waveform_gen|Add0~100      ; |waveform_gen|Add0~100      ; out0             ;
+; |waveform_gen|Add0~101      ; |waveform_gen|Add0~101      ; out0             ;
+; |waveform_gen|Add0~105      ; |waveform_gen|Add0~105      ; out0             ;
+; |waveform_gen|Add0~106      ; |waveform_gen|Add0~106      ; out0             ;
+; |waveform_gen|Add0~110      ; |waveform_gen|Add0~110      ; out0             ;
+; |waveform_gen|Add0~111      ; |waveform_gen|Add0~111      ; out0             ;
+; |waveform_gen|Add0~115      ; |waveform_gen|Add0~115      ; out0             ;
+; |waveform_gen|Add0~116      ; |waveform_gen|Add0~116      ; out0             ;
+; |waveform_gen|Add0~120      ; |waveform_gen|Add0~120      ; out0             ;
+; |waveform_gen|Add0~121      ; |waveform_gen|Add0~121      ; out0             ;
+; |waveform_gen|Add0~125      ; |waveform_gen|Add0~125      ; out0             ;
+; |waveform_gen|Add0~126      ; |waveform_gen|Add0~126      ; out0             ;
+; |waveform_gen|Add0~130      ; |waveform_gen|Add0~130      ; out0             ;
+; |waveform_gen|Add0~131      ; |waveform_gen|Add0~131      ; out0             ;
+; |waveform_gen|Add0~135      ; |waveform_gen|Add0~135      ; out0             ;
+; |waveform_gen|Add0~136      ; |waveform_gen|Add0~136      ; out0             ;
+; |waveform_gen|Add0~140      ; |waveform_gen|Add0~140      ; out0             ;
+; |waveform_gen|Add0~141      ; |waveform_gen|Add0~141      ; out0             ;
+; |waveform_gen|Add0~145      ; |waveform_gen|Add0~145      ; out0             ;
+; |waveform_gen|Add0~146      ; |waveform_gen|Add0~146      ; out0             ;
+; |waveform_gen|Add0~150      ; |waveform_gen|Add0~150      ; out0             ;
+; |waveform_gen|Add0~151      ; |waveform_gen|Add0~151      ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                     ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |waveform_gen|phase_acc[3]  ; |waveform_gen|phase_acc[3]  ; regout           ;
+; |waveform_gen|phase_acc[2]  ; |waveform_gen|phase_acc[2]  ; regout           ;
+; |waveform_gen|phase_acc[1]  ; |waveform_gen|phase_acc[1]  ; regout           ;
+; |waveform_gen|phase_acc[0]  ; |waveform_gen|phase_acc[0]  ; regout           ;
+; |waveform_gen|reset         ; |waveform_gen|reset         ; out              ;
+; |waveform_gen|en            ; |waveform_gen|en            ; out              ;
+; |waveform_gen|phase_inc[0]  ; |waveform_gen|phase_inc[0]  ; out              ;
+; |waveform_gen|phase_inc[1]  ; |waveform_gen|phase_inc[1]  ; out              ;
+; |waveform_gen|phase_inc[2]  ; |waveform_gen|phase_inc[2]  ; out              ;
+; |waveform_gen|phase_inc[3]  ; |waveform_gen|phase_inc[3]  ; out              ;
+; |waveform_gen|phase_inc[4]  ; |waveform_gen|phase_inc[4]  ; out              ;
+; |waveform_gen|phase_inc[5]  ; |waveform_gen|phase_inc[5]  ; out              ;
+; |waveform_gen|phase_inc[6]  ; |waveform_gen|phase_inc[6]  ; out              ;
+; |waveform_gen|phase_inc[7]  ; |waveform_gen|phase_inc[7]  ; out              ;
+; |waveform_gen|phase_inc[8]  ; |waveform_gen|phase_inc[8]  ; out              ;
+; |waveform_gen|phase_inc[9]  ; |waveform_gen|phase_inc[9]  ; out              ;
+; |waveform_gen|phase_inc[10] ; |waveform_gen|phase_inc[10] ; out              ;
+; |waveform_gen|phase_inc[11] ; |waveform_gen|phase_inc[11] ; out              ;
+; |waveform_gen|phase_inc[12] ; |waveform_gen|phase_inc[12] ; out              ;
+; |waveform_gen|phase_inc[13] ; |waveform_gen|phase_inc[13] ; out              ;
+; |waveform_gen|phase_inc[14] ; |waveform_gen|phase_inc[14] ; out              ;
+; |waveform_gen|phase_inc[15] ; |waveform_gen|phase_inc[15] ; out              ;
+; |waveform_gen|phase_inc[16] ; |waveform_gen|phase_inc[16] ; out              ;
+; |waveform_gen|phase_inc[17] ; |waveform_gen|phase_inc[17] ; out              ;
+; |waveform_gen|phase_inc[18] ; |waveform_gen|phase_inc[18] ; out              ;
+; |waveform_gen|phase_inc[19] ; |waveform_gen|phase_inc[19] ; out              ;
+; |waveform_gen|phase_inc[20] ; |waveform_gen|phase_inc[20] ; out              ;
+; |waveform_gen|phase_inc[21] ; |waveform_gen|phase_inc[21] ; out              ;
+; |waveform_gen|phase_inc[22] ; |waveform_gen|phase_inc[22] ; out              ;
+; |waveform_gen|phase_inc[23] ; |waveform_gen|phase_inc[23] ; out              ;
+; |waveform_gen|phase_inc[24] ; |waveform_gen|phase_inc[24] ; out              ;
+; |waveform_gen|phase_inc[25] ; |waveform_gen|phase_inc[25] ; out              ;
+; |waveform_gen|phase_inc[26] ; |waveform_gen|phase_inc[26] ; out              ;
+; |waveform_gen|phase_inc[27] ; |waveform_gen|phase_inc[27] ; out              ;
+; |waveform_gen|phase_inc[28] ; |waveform_gen|phase_inc[28] ; out              ;
+; |waveform_gen|phase_inc[29] ; |waveform_gen|phase_inc[29] ; out              ;
+; |waveform_gen|phase_inc[30] ; |waveform_gen|phase_inc[30] ; out              ;
+; |waveform_gen|phase_inc[31] ; |waveform_gen|phase_inc[31] ; out              ;
+; |waveform_gen|Add0~0        ; |waveform_gen|Add0~0        ; out0             ;
+; |waveform_gen|Add0~1        ; |waveform_gen|Add0~1        ; out0             ;
+; |waveform_gen|Add0~2        ; |waveform_gen|Add0~2        ; out0             ;
+; |waveform_gen|Add0~3        ; |waveform_gen|Add0~3        ; out0             ;
+; |waveform_gen|Add0~4        ; |waveform_gen|Add0~4        ; out0             ;
+; |waveform_gen|Add0~5        ; |waveform_gen|Add0~5        ; out0             ;
+; |waveform_gen|Add0~6        ; |waveform_gen|Add0~6        ; out0             ;
+; |waveform_gen|Add0~7        ; |waveform_gen|Add0~7        ; out0             ;
+; |waveform_gen|Add0~8        ; |waveform_gen|Add0~8        ; out0             ;
+; |waveform_gen|Add0~9        ; |waveform_gen|Add0~9        ; out0             ;
+; |waveform_gen|Add0~10       ; |waveform_gen|Add0~10       ; out0             ;
+; |waveform_gen|Add0~11       ; |waveform_gen|Add0~11       ; out0             ;
+; |waveform_gen|Add0~12       ; |waveform_gen|Add0~12       ; out0             ;
+; |waveform_gen|Add0~13       ; |waveform_gen|Add0~13       ; out0             ;
+; |waveform_gen|Add0~14       ; |waveform_gen|Add0~14       ; out0             ;
+; |waveform_gen|Add0~15       ; |waveform_gen|Add0~15       ; out0             ;
+; |waveform_gen|Add0~16       ; |waveform_gen|Add0~16       ; out0             ;
+; |waveform_gen|Add0~19       ; |waveform_gen|Add0~19       ; out0             ;
+; |waveform_gen|Add0~21       ; |waveform_gen|Add0~21       ; out0             ;
+; |waveform_gen|Add0~25       ; |waveform_gen|Add0~25       ; out0             ;
+; |waveform_gen|Add0~26       ; |waveform_gen|Add0~26       ; out0             ;
+; |waveform_gen|Add0~60       ; |waveform_gen|Add0~60       ; out0             ;
+; |waveform_gen|Add0~61       ; |waveform_gen|Add0~61       ; out0             ;
+; |waveform_gen|Add0~90       ; |waveform_gen|Add0~90       ; out0             ;
+; |waveform_gen|Add0~91       ; |waveform_gen|Add0~91       ; out0             ;
+; |waveform_gen|Add0~95       ; |waveform_gen|Add0~95       ; out0             ;
+; |waveform_gen|Add0~96       ; |waveform_gen|Add0~96       ; out0             ;
+; |waveform_gen|Add0~100      ; |waveform_gen|Add0~100      ; out0             ;
+; |waveform_gen|Add0~101      ; |waveform_gen|Add0~101      ; out0             ;
+; |waveform_gen|Add0~105      ; |waveform_gen|Add0~105      ; out0             ;
+; |waveform_gen|Add0~106      ; |waveform_gen|Add0~106      ; out0             ;
+; |waveform_gen|Add0~110      ; |waveform_gen|Add0~110      ; out0             ;
+; |waveform_gen|Add0~111      ; |waveform_gen|Add0~111      ; out0             ;
+; |waveform_gen|Add0~115      ; |waveform_gen|Add0~115      ; out0             ;
+; |waveform_gen|Add0~116      ; |waveform_gen|Add0~116      ; out0             ;
+; |waveform_gen|Add0~120      ; |waveform_gen|Add0~120      ; out0             ;
+; |waveform_gen|Add0~121      ; |waveform_gen|Add0~121      ; out0             ;
+; |waveform_gen|Add0~125      ; |waveform_gen|Add0~125      ; out0             ;
+; |waveform_gen|Add0~126      ; |waveform_gen|Add0~126      ; out0             ;
+; |waveform_gen|Add0~130      ; |waveform_gen|Add0~130      ; out0             ;
+; |waveform_gen|Add0~131      ; |waveform_gen|Add0~131      ; out0             ;
+; |waveform_gen|Add0~135      ; |waveform_gen|Add0~135      ; out0             ;
+; |waveform_gen|Add0~136      ; |waveform_gen|Add0~136      ; out0             ;
+; |waveform_gen|Add0~140      ; |waveform_gen|Add0~140      ; out0             ;
+; |waveform_gen|Add0~141      ; |waveform_gen|Add0~141      ; out0             ;
+; |waveform_gen|Add0~145      ; |waveform_gen|Add0~145      ; out0             ;
+; |waveform_gen|Add0~146      ; |waveform_gen|Add0~146      ; out0             ;
+; |waveform_gen|Add0~150      ; |waveform_gen|Add0~150      ; out0             ;
+; |waveform_gen|Add0~151      ; |waveform_gen|Add0~151      ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Nov 20 16:52:07 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off DDS -c DDS
+Info: Using vector source file "C:/Documents/School/cpen311-Lab5/sim/DDS/DDS.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of DDS.vwf called DDS.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      71.38 %
+Info: Number of transitions in simulation is 3438367
+Info: Vector file DDS.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Sat Nov 20 16:52:13 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
+
+
