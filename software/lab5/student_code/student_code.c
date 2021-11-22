@@ -20,6 +20,14 @@ void handle_lfsr_interrupts(void* context, alt_u32 id)
 	#ifdef LFSR_VAL_BASE
 	#ifdef LFSR_CLK_INTERRUPT_GEN_BASE
 	#ifdef DDS_INCREMENT_BASE
+
+	int lfsr_val = IORD_ALTERA_AVALON_PIO_DATA(LFSR_VAL_BASE);
+	int tuning_word = 85;
+	if (lfsr_val % 2 == 1) {
+		tuning_word = 430;
+	}
+	IOWR_ALTERA_AVALON_PIO_DATA(DDS_INCREMENT_BASE, tuning_word);
+	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(LFSR_CLK_INTERRUPT_GEN_BASE, 0x0);
 	
 	#endif
 	#endif

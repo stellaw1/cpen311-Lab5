@@ -309,7 +309,10 @@ DE1_SoC_QSYS U0(
 	   .audio2fifo_0_out_stop_export                  (STOP),                  //           audio2fifo_0_out_stop.export
 	   .audio2fifo_0_wrclk_export                     (WRCLK),                     //              audio2fifo_0_wrclk.export
 	   .audio2fifo_0_wrreq_export                     (WRREQ),                   //              audio2fifo_0_wrreq.export
-		
+
+		.lfsr_clk_interrupt_gen_external_connection_export(lfsr_clk),
+		.lfsr_val_external_connection_export(LFSR),
+		.dds_increment_external_connection_export(dds_increment),
 		
 		//interfaces
 	   .signal_selector_export                        (signal_selector[7:0]),                        //                 signal_selector.export
@@ -350,13 +353,18 @@ lfsr lfsr_inst (
 
 
 // task 3
-logic [11:0] ASK_signal, BPSK_signal, FSK_signal;
+logic [11:0] ASK_signal, BPSK_signal, FSK_signal, LFSR_signal;
 assign ASK_signal = LFSR[0] ? cos_out : 12'b0;
 assign BPSK_signal = LFSR[0] ? cos_out : (~cos_out + 1);
-assign FSK_signal = 12'b0;
+assign FSK_signal = cos_out;
+assign LFSR_signal = LFSR[0] ? 12'b0 : 12'b100000000001;
 
 // task 2
 logic [11:0] sin_out, cos_out, squ_out, saw_out;
+
+// set phase depending on if FSK selected or not
+logic [31:0] phase;
+assign phase = modulation_selector == 2'b01 ? dds_increment : 32'd258;
 
 waveform_gen
 DDS
@@ -364,7 +372,7 @@ DDS
 	.clk(CLOCK_50),
 	.reset(1),
 	.en(1),
-	.phase_inc(32'd258),
+	.phase_inc(phase),
 
 	.sin_out(sin_out),
 	.cos_out(cos_out),
@@ -393,7 +401,7 @@ choose_modulation_signal
 	.a(ASK_signal),
 	.b(FSK_signal),
 	.c(BPSK_signal),
-	.d(LFSR),
+	.d(LFSR_signal),
 	.sel(modulation_selector[1:0]),
 	.out(unsynced_selected_modulation),
 );
